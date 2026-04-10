@@ -5,6 +5,7 @@ Codewars exercises solved in Python.
 ## Table of contents
 
 - [Solutions](#solutions)
+  - [1 kyu](#1-kyu)
   - [6 kyu](#6-kyu)
   - [8 kyu](#8-kyu)
 - [Structure](#structure)
@@ -14,6 +15,12 @@ Codewars exercises solved in Python.
 ## Solutions
 
 **Kyu** levels on Codewars run from **8 kyu** (easiest) toward **1 kyu** (hardest): a **higher** kyu number means an **easier** exercise; a **lower** kyu number means a **harder** one.
+
+### 1 kyu
+
+| Exercise | File |
+|----------|------|
+| Simple Interactive Interpreter | [simple-interactive-nterpreter.py](1kyu/simple-interactive-nterpreter.py) |
 
 ### 6 kyu
 
