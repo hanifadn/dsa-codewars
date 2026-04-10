@@ -9,6 +9,7 @@ Codewars exercises solved in JavaScript.
   - [7 kyu](#7-kyu)
   - [6 kyu](#6-kyu)
   - [5 kyu](#5-kyu)
+  - [1 kyu](#1-kyu)
 - [Structure](#structure)
 - [File headers](#file-headers)
 - [Running locally](#running-locally)
@@ -34,8 +35,8 @@ Codewars exercises solved in JavaScript.
 
 | Exercise | File |
 |----------|------|
-| Array diff | [array-diff.js](6kyu/array-diff.js) |
-| Break camelCase | [break-camelcase.js](6kyu/break-camelcase.js) |
+| Array.diff | [array-diff.js](6kyu/array-diff.js) |
+| Break CamelCase | [break-camelcase.js](6kyu/break-camelcase.js) |
 | Create Phone Number | [create-phone-number.js](6kyu/create-phone-number.js) |
 | Duplicate Encoder | [duplicate-encoder.js](6kyu/duplicate-encoder.js) |
 
@@ -44,8 +45,14 @@ Codewars exercises solved in JavaScript.
 | Exercise | File |
 |----------|------|
 | Calculating with Functions | [calculating-with-functions.js](5kyu/calculating-with-functions.js) |
-| First non-repeating character | [first-non-repeating-character.js](5kyu/first-non-repeating-character.js) |
+| First Non-Repeating Character | [first-non-repeating-character.js](5kyu/first-non-repeating-character.js) |
 | Moving Zeros to the End | [moving-zeros-to-the-end.js](5kyu/moving-zeros-to-the-end.js) |
+
+### 1 kyu
+
+| Exercise | File |
+|----------|------|
+| Simple Interactive Interpreter | [simple-interactive-nterpreter.js](1kyu/simple-interactive-nterpreter.js) |
 
 ## Structure
 

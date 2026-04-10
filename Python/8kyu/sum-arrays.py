@@ -3,10 +3,13 @@ Title: Sum Arrays
 Link: https://www.codewars.com/kata/53dc54212259ed3d4f00071c
 Difficulty: 8 kyu
 
-Description:
+## Description
+
 Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative. If the array is empty, return 0.
 
-Examples
+## Examples
+
+```text
 Input: [1, 5.2, 4, 0, -1]
 Output: 9.2
 
@@ -15,12 +18,12 @@ Output: -2.398
 
 Input: []
 Output: 0
+```
 
-Assumptions
-You can assume that you are given a (possibly empty) valid array containing only numbers.
-What We're Testing
-We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
-Advanced users may find this extremely easy and can easily write this in one line.
+## Details
+
+- **Assumptions**: You can assume that you are given a (possibly empty) valid array containing only numbers.
+- **Goal**: We're testing basic loops and math operations.
 """
 
 def sum_array(a):
