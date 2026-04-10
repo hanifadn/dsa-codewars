@@ -5,6 +5,7 @@ Codewars exercises solved in Python.
 ## Table of contents
 
 - [Solutions](#solutions)
+  - [6 kyu](#6-kyu)
   - [8 kyu](#8-kyu)
 - [Structure](#structure)
 - [File headers](#file-headers)
@@ -14,11 +15,20 @@ Codewars exercises solved in Python.
 
 **Kyu** levels on Codewars run from **8 kyu** (easiest) toward **1 kyu** (hardest): a **higher** kyu number means an **easier** exercise; a **lower** kyu number means a **harder** one.
 
+### 6 kyu
+
+| Exercise | File |
+|----------|------|
+| Convert string to camel case | [convert-string-to-camelcase.py](6kyu/convert-string-to-camelcase.py) |
+
 ### 8 kyu
 
 | Exercise | File |
 |----------|------|
+| Beginner - Lost Without a Map | [beginner-lost-without-a-map.py](8kyu/beginner-lost-without-a-map.py) |
 | Find Maximum and Minimum Values of a List | [find-maximum-and-minimum-values-of-a-list.py](8kyu/find-maximum-and-minimum-values-of-a-list.py) |
+| If you can't sleep, just count sheeps!! | [if-you-cant-sleep-just-count-sheep.py](8kyu/if-you-cant-sleep-just-count-sheep.py) |
+| Invert Values | [invert-values.py](8kyu/invert-values.py) |
 | Sum Arrays | [sum-arrays.py](8kyu/sum-arrays.py) |
 
 ## Structure
