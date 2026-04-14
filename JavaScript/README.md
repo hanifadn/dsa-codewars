@@ -4,15 +4,17 @@ Codewars exercises solved in JavaScript.
 
 ## Table of contents
 
-- [Solutions](#solutions)
-  - [8 kyu](#8-kyu)
-  - [7 kyu](#7-kyu)
-  - [6 kyu](#6-kyu)
-  - [5 kyu](#5-kyu)
-  - [1 kyu](#1-kyu)
-- [Structure](#structure)
-- [File headers](#file-headers)
-- [Running locally](#running-locally)
+- [JavaScript](#javascript)
+  - [Table of contents](#table-of-contents)
+  - [Solutions](#solutions)
+    - [8 kyu](#8-kyu)
+    - [7 kyu](#7-kyu)
+    - [6 kyu](#6-kyu)
+    - [5 kyu](#5-kyu)
+    - [1 kyu](#1-kyu)
+  - [Structure](#structure)
+  - [File headers](#file-headers)
+  - [Running locally](#running-locally)
 
 ## Solutions
 

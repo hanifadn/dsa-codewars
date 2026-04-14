@@ -16,6 +16,7 @@ A collection of my solutions to [Codewars](https://www.codewars.com/) challenges
 
 Exercise catalogs grouped by level (**8 kyu** → **1 kyu**: higher kyu = easier, lower kyu = harder):
 
+- [Groovy — Solutions](Groovy/README.md#solutions)
 - [JavaScript — Solutions](JavaScript/README.md#solutions)
 - [Python — Solutions](Python/README.md#solutions)
 
@@ -23,6 +24,7 @@ Exercise catalogs grouped by level (**8 kyu** → **1 kyu**: higher kyu = easier
 
 ```
 codewars-challenges/
+├── Groovy/
 ├── JavaScript/
 ├── Python/
 └── README.md
@@ -39,6 +41,7 @@ Within each language directory, files live in subfolders that reflect difficulty
 
 This repository does not include a shared test runner. To run a solution on your machine:
 
+- **Groovy:** `groovy path/to/file.groovy`, or use `groovysh` / a small `groovy -e` script if the file only defines classes. See [Groovy/README.md](Groovy/README.md#running-locally).
 - **JavaScript:** `node path/to/file.js` (add a `console.log` if the file only defines functions).
 - **Python:** `python path/to/file.py` or use a REPL to import and call the functions.
 
@@ -46,5 +49,6 @@ The canonical test suite for each exercise is on Codewars, via the link in that 
 
 ## Language documentation
 
+- [Groovy](Groovy/README.md)
 - [JavaScript](JavaScript/README.md)
 - [Python](Python/README.md)
