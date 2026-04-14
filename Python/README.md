@@ -4,13 +4,15 @@ Codewars exercises solved in Python.
 
 ## Table of contents
 
-- [Solutions](#solutions)
-  - [1 kyu](#1-kyu)
-  - [6 kyu](#6-kyu)
-  - [8 kyu](#8-kyu)
-- [Structure](#structure)
-- [File headers](#file-headers)
-- [Running locally](#running-locally)
+- [Python](#python)
+  - [Table of contents](#table-of-contents)
+  - [Solutions](#solutions)
+    - [1 kyu](#1-kyu)
+    - [6 kyu](#6-kyu)
+    - [8 kyu](#8-kyu)
+  - [Structure](#structure)
+  - [File headers](#file-headers)
+  - [Running locally](#running-locally)
 
 ## Solutions
 
