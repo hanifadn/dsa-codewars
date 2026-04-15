@@ -11,6 +11,7 @@ Codewars exercises solved in JavaScript.
     - [7 kyu](#7-kyu)
     - [6 kyu](#6-kyu)
     - [5 kyu](#5-kyu)
+    - [4 kyu](#4-kyu)
     - [1 kyu](#1-kyu)
   - [Structure](#structure)
   - [File headers](#file-headers)
@@ -49,6 +50,12 @@ Codewars exercises solved in JavaScript.
 | Calculating with Functions | [calculating-with-functions.js](5kyu/calculating-with-functions.js) |
 | First Non-Repeating Character | [first-non-repeating-character.js](5kyu/first-non-repeating-character.js) |
 | Moving Zeros to the End | [moving-zeros-to-the-end.js](5kyu/moving-zeros-to-the-end.js) |
+
+### 4 kyu
+
+| Exercise | File |
+|----------|------|
+| 4 By 4 Skyscrapers | [4-by-4-skyscrapers.js](4kyu/4-by-4-skyscrapers.js) |
 
 ### 1 kyu
 

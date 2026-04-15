@@ -8,6 +8,7 @@ Codewars exercises solved in Python.
   - [Table of contents](#table-of-contents)
   - [Solutions](#solutions)
     - [1 kyu](#1-kyu)
+    - [4 kyu](#4-kyu)
     - [6 kyu](#6-kyu)
     - [8 kyu](#8-kyu)
   - [Structure](#structure)
@@ -23,6 +24,12 @@ Codewars exercises solved in Python.
 | Exercise | File |
 |----------|------|
 | Simple Interactive Interpreter | [simple-interactive-nterpreter.py](1kyu/simple-interactive-nterpreter.py) |
+
+### 4 kyu
+
+| Exercise | File |
+|----------|------|
+| 4 By 4 Skyscrapers | [4-by-4-skyscrapers.py](4kyu/4-by-4-skyscrapers.py) |
 
 ### 6 kyu
 
