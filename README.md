@@ -24,7 +24,7 @@ Exercise catalogs grouped by level (**8 kyu** → **1 kyu**: higher kyu = easier
 ## Repository layout
 
 ```
-codewars-challenges/
+dsa-codewars/
 ├── Go/
 ├── Groovy/
 ├── JavaScript/
@@ -32,7 +32,7 @@ codewars-challenges/
 └── README.md
 ```
 
-Within each language directory, files live in subfolders that reflect difficulty on Codewars. **A higher kyu means an easier exercise; a lower kyu means a harder one.** See the language READMEs above for full listings.
+Within each language directory, files live in subfolders that reflect difficulty on Codewars (for example `3kyu/`, `5kyu/`, `8kyu/`). **A higher kyu means an easier exercise; a lower kyu means a harder one.** Each language README lists every solution file in this repo.
 
 ## Conventions
 

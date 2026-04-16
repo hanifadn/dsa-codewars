@@ -12,6 +12,7 @@ Codewars exercises solved in JavaScript.
     - [6 kyu](#6-kyu)
     - [5 kyu](#5-kyu)
     - [4 kyu](#4-kyu)
+    - [3 kyu](#3-kyu)
     - [1 kyu](#1-kyu)
   - [Structure](#structure)
   - [File headers](#file-headers)
@@ -25,7 +26,9 @@ Codewars exercises solved in JavaScript.
 
 | Exercise | File |
 |----------|------|
+| Array Plus Array | [array-plus-array.js](8kyu/array-plus-array.js) |
 | Even or Odd | [even-or-odd.js](8kyu/even-or-odd.js) |
+| Grasshopper - Debug | [grasshopper-debug.js](8kyu/grasshopper-debug.js) |
 
 ### 7 kyu
 
@@ -42,6 +45,7 @@ Codewars exercises solved in JavaScript.
 | Break CamelCase | [break-camelcase.js](6kyu/break-camelcase.js) |
 | Create Phone Number | [create-phone-number.js](6kyu/create-phone-number.js) |
 | Duplicate Encoder | [duplicate-encoder.js](6kyu/duplicate-encoder.js) |
+| Tortoise racing | [tortoise-racing.js](6kyu/tortoise-racing.js) |
 
 ### 5 kyu
 
@@ -50,12 +54,19 @@ Codewars exercises solved in JavaScript.
 | Calculating with Functions | [calculating-with-functions.js](5kyu/calculating-with-functions.js) |
 | First Non-Repeating Character | [first-non-repeating-character.js](5kyu/first-non-repeating-character.js) |
 | Moving Zeros to the End | [moving-zeros-to-the-end.js](5kyu/moving-zeros-to-the-end.js) |
+| Pete, the baker | [pete-the-baker.js](5kyu/pete-the-baker.js) |
 
 ### 4 kyu
 
 | Exercise | File |
 |----------|------|
 | 4 By 4 Skyscrapers | [4-by-4-skyscrapers.js](4kyu/4-by-4-skyscrapers.js) |
+
+### 3 kyu
+
+| Exercise | File |
+|----------|------|
+| The builder of things | [the-builder-of-things.js](3kyu/the-builder-of-things.js) |
 
 ### 1 kyu
 
