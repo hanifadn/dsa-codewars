@@ -10,6 +10,7 @@ Codewars exercises solved in Python.
     - [1 kyu](#1-kyu)
     - [3 kyu](#3-kyu)
     - [4 kyu](#4-kyu)
+    - [5 kyu](#5-kyu)
     - [6 kyu](#6-kyu)
     - [8 kyu](#8-kyu)
   - [Structure](#structure)
@@ -31,6 +32,7 @@ Codewars exercises solved in Python.
 | Exercise | File |
 |----------|------|
 | Battleship field validator | [battleship-field-validator.py](3kyu/battleship-field-validator.py) |
+| The builder of things | [the-builder-of-things.py](3kyu/the-builder-of-things.py) |
 | The Millionth Fibonacci | [the-millionth-fibonacci.py](3kyu/the-millionth-fibonacci.py) |
 
 ### 4 kyu
@@ -39,18 +41,27 @@ Codewars exercises solved in Python.
 |----------|------|
 | 4 By 4 Skyscrapers | [4-by-4-skyscrapers.py](4kyu/4-by-4-skyscrapers.py) |
 
+### 5 kyu
+
+| Exercise | File |
+|----------|------|
+| Pete, the baker | [pete-the-baker.py](5kyu/pete-the-baker.py) |
+
 ### 6 kyu
 
 | Exercise | File |
 |----------|------|
 | Convert string to camel case | [convert-string-to-camelcase.py](6kyu/convert-string-to-camelcase.py) |
+| Tortoise racing | [tortoise-racing.py](6kyu/tortoise-racing.py) |
 
 ### 8 kyu
 
 | Exercise | File |
 |----------|------|
+| Array Plus Array | [array-plus-array.py](8kyu/array-plus-array.py) |
 | Beginner - Lost Without a Map | [beginner-lost-without-a-map.py](8kyu/beginner-lost-without-a-map.py) |
 | Find Maximum and Minimum Values of a List | [find-maximum-and-minimum-values-of-a-list.py](8kyu/find-maximum-and-minimum-values-of-a-list.py) |
+| Grasshopper - Debug | [grasshopper-debug.py](8kyu/grasshopper-debug.py) |
 | If you can't sleep, just count sheeps!! | [if-you-cant-sleep-just-count-sheep.py](8kyu/if-you-cant-sleep-just-count-sheep.py) |
 | Invert Values | [invert-values.py](8kyu/invert-values.py) |
 | Sum Arrays | [sum-arrays.py](8kyu/sum-arrays.py) |

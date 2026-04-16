@@ -23,6 +23,7 @@ Codewars exercises solved in Groovy.
 | Exercise | File |
 |----------|------|
 | Find the smallest integer in the array | [find-the-smallest-integer-in-the-array.groovy](8kyu/find-the-smallest-integer-in-the-array.groovy) |
+| Grasshopper - Debug | [grasshopper-debug.groovy](8kyu/grasshopper-debug.groovy) |
 
 ### 7 kyu
 
@@ -36,6 +37,7 @@ Codewars exercises solved in Groovy.
 | Exercise | File |
 |----------|------|
 | Counting Duplicates | [counting-duplicates.groovy](6kyu/counting-duplicates.groovy) |
+| Tortoise racing | [tortoise-racing.groovy](6kyu/tortoise-racing.groovy) |
 
 ## Structure
 
