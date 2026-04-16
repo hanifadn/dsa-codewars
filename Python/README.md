@@ -8,6 +8,7 @@ Codewars exercises solved in Python.
   - [Table of contents](#table-of-contents)
   - [Solutions](#solutions)
     - [1 kyu](#1-kyu)
+    - [3 kyu](#3-kyu)
     - [4 kyu](#4-kyu)
     - [6 kyu](#6-kyu)
     - [8 kyu](#8-kyu)
@@ -24,6 +25,12 @@ Codewars exercises solved in Python.
 | Exercise | File |
 |----------|------|
 | Simple Interactive Interpreter | [simple-interactive-nterpreter.py](1kyu/simple-interactive-nterpreter.py) |
+
+### 3 kyu
+
+| Exercise | File |
+|----------|------|
+| Battleship field validator | [battleship-field-validator.py](3kyu/battleship-field-validator.py) |
 
 ### 4 kyu
 
