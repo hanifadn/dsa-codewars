@@ -7,6 +7,7 @@ Codewars exercises solved in Go.
 - [Go](#go)
   - [Table of contents](#table-of-contents)
   - [Solutions](#solutions)
+    - [8 kyu](#8-kyu)
     - [4 kyu](#4-kyu)
     - [5 kyu](#5-kyu)
     - [6 kyu](#6-kyu)
@@ -17,6 +18,15 @@ Codewars exercises solved in Go.
 ## Solutions
 
 **Kyu** levels on Codewars run from **8 kyu** (easiest) toward **1 kyu** (hardest): a **higher** kyu number means an **easier** exercise; a **lower** kyu number means a **harder** one.
+
+### 8 kyu
+
+| Exercise | File |
+|----------|------|
+| Beginner - Lost Without a Map | [beginner-lost-without-a-map.go](8kyu/beginner-lost-without-a-map.go) |
+| Even or Odd | [even-or-odd.go](8kyu/even-or-odd.go) |
+| If you can't sleep, just count sheep!! | [if-you-cant-sleep-just-count-sheep.go](8kyu/if-you-cant-sleep-just-count-sheep.go) |
+| Invert values | [invert-values.go](8kyu/invert-values.go) |
 
 ### 4 kyu
 

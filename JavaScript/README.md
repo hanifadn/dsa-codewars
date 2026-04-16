@@ -27,8 +27,13 @@ Codewars exercises solved in JavaScript.
 | Exercise | File |
 |----------|------|
 | Array Plus Array | [array-plus-array.js](8kyu/array-plus-array.js) |
+| Beginner - Lost Without a Map | [beginner-lost-without-a-map.js](8kyu/beginner-lost-without-a-map.js) |
 | Even or Odd | [even-or-odd.js](8kyu/even-or-odd.js) |
+| Find Maximum and Minimum Values of a List | [find-maximum-and-minimum-values-of-a-list.js](8kyu/find-maximum-and-minimum-values-of-a-list.js) |
 | Grasshopper - Debug | [grasshopper-debug.js](8kyu/grasshopper-debug.js) |
+| If you can't sleep, just count sheep!! | [if-you-cant-sleep-just-count-sheep.js](8kyu/if-you-cant-sleep-just-count-sheep.js) |
+| Invert values | [invert-values.js](8kyu/invert-values.js) |
+| Sum Arrays | [sum-arrays.js](8kyu/sum-arrays.js) |
 
 ### 7 kyu
 

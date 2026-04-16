@@ -22,6 +22,7 @@ Codewars exercises solved in Groovy.
 
 | Exercise | File |
 |----------|------|
+| Even or Odd | [even-or-odd.groovy](8kyu/even-or-odd.groovy) |
 | Find the smallest integer in the array | [find-the-smallest-integer-in-the-array.groovy](8kyu/find-the-smallest-integer-in-the-array.groovy) |
 | Grasshopper - Debug | [grasshopper-debug.groovy](8kyu/grasshopper-debug.groovy) |
 
@@ -30,6 +31,7 @@ Codewars exercises solved in Groovy.
 | Exercise | File |
 |----------|------|
 | Anagram Detection | [anagram-detection.groovy](7kyu/anagram-detection.groovy) |
+| Binary Addition | [binary-addition.groovy](7kyu/binary-addition.groovy) |
 | You're a square! | [youre-a-square.groovy](7kyu/youre-a-square.groovy) |
 
 ### 6 kyu
