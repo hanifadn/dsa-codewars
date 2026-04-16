@@ -31,6 +31,7 @@ Codewars exercises solved in Python.
 | Exercise | File |
 |----------|------|
 | Battleship field validator | [battleship-field-validator.py](3kyu/battleship-field-validator.py) |
+| The Millionth Fibonacci | [the-millionth-fibonacci.py](3kyu/the-millionth-fibonacci.py) |
 
 ### 4 kyu
 
