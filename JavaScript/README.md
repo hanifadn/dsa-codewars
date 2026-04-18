@@ -6,6 +6,9 @@ Codewars exercises solved in JavaScript.
 
 - [JavaScript](#javascript)
   - [Table of contents](#table-of-contents)
+  - [File format and local runs](#file-format-and-local-runs)
+    - [File headers](#file-headers)
+    - [Running locally](#running-locally)
   - [Solutions](#solutions)
     - [8 kyu](#8-kyu)
     - [7 kyu](#7-kyu)
@@ -13,10 +16,32 @@ Codewars exercises solved in JavaScript.
     - [5 kyu](#5-kyu)
     - [4 kyu](#4-kyu)
     - [3 kyu](#3-kyu)
+    - [2 kyu](#2-kyu)
     - [1 kyu](#1-kyu)
-  - [Structure](#structure)
-  - [File headers](#file-headers)
-  - [Running locally](#running-locally)
+  - [License](#license)
+
+## File format and local runs
+
+### File headers
+
+Each `.js` file begins with a JSDoc-style block: title, link to the kata on Codewars, difficulty, and problem description.
+
+Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`, `7kyu/`, `2kyu/`). Folder names match the level so you can navigate by kyu.
+
+### Running locally
+
+**To run a solution on your machine:**
+
+- **Tech stack:** [Node.js](https://nodejs.org/) — vanilla JavaScript (no framework or bundler).
+- **Node.js:** **18.x** or newer (current [LTS](https://nodejs.org/en/about/previous-releases) recommended).
+
+Check your runtime: `node --version`
+
+```bash
+node path/to/kata-file.js
+```
+
+If the file only defines functions, add a temporary `console.log(...)` to exercise them, or paste the code into the Codewars editor and run tests there.
 
 ## Solutions
 
@@ -60,6 +85,8 @@ Codewars exercises solved in JavaScript.
 | First Non-Repeating Character | [first-non-repeating-character.js](5kyu/first-non-repeating-character.js) |
 | Moving Zeros to the End | [moving-zeros-to-the-end.js](5kyu/moving-zeros-to-the-end.js) |
 | Pete, the baker | [pete-the-baker.js](5kyu/pete-the-baker.js) |
+| My smallest code interpreter (aka Brainf**k) | [my-smallest-code-interpreter-aka-brainfk.js](5kyu/my-smallest-code-interpreter-aka-brainfk.js) |
+| The Hashtag Generator | [the-hashtag-generator.js](5kyu/the-hashtag-generator.js) |
 
 ### 4 kyu
 
@@ -73,29 +100,18 @@ Codewars exercises solved in JavaScript.
 |----------|------|
 | The builder of things | [the-builder-of-things.js](3kyu/the-builder-of-things.js) |
 
+### 2 kyu
+
+| Exercise | File |
+|----------|------|
+| Linear equations N x M, complete solution space, fraction representation | [linear-equations-n-x-m-complete-solution-space-fraction-representation.js](2kyu/linear-equations-n-x-m-complete-solution-space-fraction-representation.js) |
+
 ### 1 kyu
 
 | Exercise | File |
 |----------|------|
 | Simple Interactive Interpreter | [simple-interactive-nterpreter.js](1kyu/simple-interactive-nterpreter.js) |
 
-## Structure
+## License
 
-Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`, `7kyu/`). Folder names match the level so you can navigate by kyu.
-
-## File headers
-
-Each `.js` file begins with a JSDoc-style block: title, link to the kata on Codewars, difficulty, and problem description.
-
-## Running locally
-
-- **Tech stack:** [Node.js](https://nodejs.org/) — vanilla JavaScript (no framework or bundler).
-- **Node.js:** **18.x** or newer (current [LTS](https://nodejs.org/en/about/previous-releases) recommended).
-
-Check your runtime: `node --version`
-
-```bash
-node path/to/kata-file.js
-```
-
-If the file only defines functions, add a temporary `console.log(...)` to exercise them, or paste the code into the Codewars editor and run tests there.
+These JavaScript files are **personal practice solutions** only — not affiliated with [Codewars](https://www.codewars.com/). For the full notice, see [License](../README.md#license) in the repository root.
