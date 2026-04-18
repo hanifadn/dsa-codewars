@@ -6,6 +6,9 @@ Codewars exercises solved in Python.
 
 - [Python](#python)
   - [Table of contents](#table-of-contents)
+  - [File format and local runs](#file-format-and-local-runs)
+    - [File headers](#file-headers)
+    - [Running locally](#running-locally)
   - [Solutions](#solutions)
     - [8 kyu](#8-kyu)
     - [7 kyu](#7-kyu)
@@ -13,10 +16,32 @@ Codewars exercises solved in Python.
     - [5 kyu](#5-kyu)
     - [4 kyu](#4-kyu)
     - [3 kyu](#3-kyu)
+    - [2 kyu](#2-kyu)
     - [1 kyu](#1-kyu)
-  - [Structure](#structure)
-  - [File headers](#file-headers)
-  - [Running locally](#running-locally)
+  - [License](#license)
+
+## File format and local runs
+
+### File headers
+
+Each `.py` file begins with a module docstring: title, link to the kata on Codewars, difficulty, and problem description.
+
+Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`, `2kyu/`). Folder names match the level so you can navigate by kyu.
+
+### Running locally
+
+**To run a solution on your machine:**
+
+- **Tech stack:** [Python](https://www.python.org/) 3 — standard library (no extra packages required for these exercises).
+- **Python:** **3.8** or newer.
+
+Check your runtime: `python3 --version` (or `python --version` if that points to Python 3 on your system).
+
+```bash
+python3 path/to/kata-file.py
+```
+
+If the file only defines functions, use a REPL (`python3 -i path/to/kata-file.py` or `python3 -i`) to import and call them, or paste the code into the Codewars editor and run tests there.
 
 ## Solutions
 
@@ -55,6 +80,8 @@ Below, sections are listed in **descending kyu order**: **8 kyu** first, **1 kyu
 | Exercise | File |
 |----------|------|
 | Pete, the baker | [pete-the-baker.py](5kyu/pete-the-baker.py) |
+| My smallest code interpreter (aka Brainf**k) | [my-smallest-code-interpreter-aka-brainfk.py](5kyu/my-smallest-code-interpreter-aka-brainfk.py) |
+| The Hashtag Generator | [the-hashtag-generator.py](5kyu/the-hashtag-generator.py) |
 
 ### 4 kyu
 
@@ -70,29 +97,18 @@ Below, sections are listed in **descending kyu order**: **8 kyu** first, **1 kyu
 | The builder of things | [the-builder-of-things.py](3kyu/the-builder-of-things.py) |
 | The Millionth Fibonacci | [the-millionth-fibonacci.py](3kyu/the-millionth-fibonacci.py) |
 
+### 2 kyu
+
+| Exercise | File |
+|----------|------|
+| Linear equations N x M, complete solution space, fraction representation | [linear-equations-n-x-m-complete-solution-space-fraction-representation.py](2kyu/linear-equations-n-x-m-complete-solution-space-fraction-representation.py) |
+
 ### 1 kyu
 
 | Exercise | File |
 |----------|------|
 | Simple Interactive Interpreter | [simple-interactive-nterpreter.py](1kyu/simple-interactive-nterpreter.py) |
 
-## Structure
+## License
 
-Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`). Folder names match the level so you can navigate by kyu.
-
-## File headers
-
-Each `.py` file begins with a module docstring: title, link to the kata on Codewars, difficulty, and problem description.
-
-## Running locally
-
-- **Tech stack:** [Python](https://www.python.org/) 3 — standard library (no extra packages required for these exercises).
-- **Python:** **3.8** or newer.
-
-Check your runtime: `python3 --version` (or `python --version` if that points to Python 3 on your system).
-
-```bash
-python3 path/to/kata-file.py
-```
-
-If the file only defines functions, use a REPL (`python3 -i path/to/kata-file.py` or `python3 -i`) to import and call them, or paste the code into the Codewars editor and run tests there.
+These Python files are **personal practice solutions** only — not affiliated with [Codewars](https://www.codewars.com/). For the full notice, see [License](../README.md#license) in the repository root.

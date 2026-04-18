@@ -6,13 +6,40 @@ Codewars exercises solved in Groovy.
 
 - [Groovy](#groovy)
   - [Table of contents](#table-of-contents)
+  - [File format and local runs](#file-format-and-local-runs)
+    - [File headers](#file-headers)
+    - [Running locally](#running-locally)
   - [Solutions](#solutions)
     - [8 kyu](#8-kyu)
     - [7 kyu](#7-kyu)
     - [6 kyu](#6-kyu)
-  - [Structure](#structure)
-  - [File headers](#file-headers)
-  - [Running locally](#running-locally)
+    - [5 kyu](#5-kyu)
+  - [License](#license)
+
+## File format and local runs
+
+### File headers
+
+Each `.groovy` file begins with a block comment: title, link to the kata on Codewars, difficulty, and problem description.
+
+Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`, `7kyu/`). Folder names match the level so you can navigate by kyu.
+
+### Running locally
+
+**To run a solution on your machine:**
+
+- **Tech stack:** [Apache Groovy](https://groovy-lang.org/) on the JVM — standard library; no extra packages required for these exercises.
+- **Groovy:** **2.5** or newer (Codewars uses Groovy 2.5 per [language docs](https://docs.codewars.com/languages/groovy); newer versions usually work for the same snippets).
+
+Check your runtime: `groovy --version`
+
+```bash
+groovy path/to/kata-file.groovy
+```
+
+To compile without running: `groovyc path/to/kata-file.groovy`
+
+If the file only defines classes or functions, use `groovy -e '...'` for a quick snippet, open a REPL (`groovysh`), or paste the code into the Codewars editor and run tests there.
 
 ## Solutions
 
@@ -41,25 +68,13 @@ Codewars exercises solved in Groovy.
 | Counting Duplicates | [counting-duplicates.groovy](6kyu/counting-duplicates.groovy) |
 | Tortoise racing | [tortoise-racing.groovy](6kyu/tortoise-racing.groovy) |
 
-## Structure
+### 5 kyu
 
-Solutions are grouped in subfolders named after Codewars difficulty (for example `8kyu/`, `7kyu/`). Folder names match the level so you can navigate by kyu.
+| Exercise | File |
+|----------|------|
+| My smallest code interpreter (aka Brainf**k) | [my-smallest-code-interpreter-aka-brainfk.groovy](5kyu/my-smallest-code-interpreter-aka-brainfk.groovy) |
+| The Hashtag Generator | [the-hashtag-generator.groovy](5kyu/the-hashtag-generator.groovy) |
 
-## File headers
+## License
 
-Each `.groovy` file begins with a block comment: title, link to the kata on Codewars, difficulty, and problem description.
-
-## Running locally
-
-- **Tech stack:** [Apache Groovy](https://groovy-lang.org/) on the JVM — standard library; no extra packages required for these exercises.
-- **Groovy:** **2.5** or newer (Codewars uses Groovy 2.5 per [language docs](https://docs.codewars.com/languages/groovy); newer versions usually work for the same snippets).
-
-Check your runtime: `groovy --version`
-
-```bash
-groovy path/to/kata-file.groovy
-```
-
-To compile without running: `groovyc path/to/kata-file.groovy`
-
-If the file only defines classes or functions, use `groovy -e '...'` for a quick snippet, open a REPL (`groovysh`), or paste the code into the Codewars editor and run tests there.
+These Groovy files are **personal practice solutions** only — not affiliated with [Codewars](https://www.codewars.com/). For the full notice, see [License](../README.md#license) in the repository root.
