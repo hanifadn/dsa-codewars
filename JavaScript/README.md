@@ -93,6 +93,7 @@ If the file only defines functions, add a temporary `console.log(...)` to exerci
 | Exercise | File |
 |----------|------|
 | 4 By 4 Skyscrapers | [4-by-4-skyscrapers.js](4kyu/4-by-4-skyscrapers.js) |
+| Matrix Determinant | [matrix-determinant.js](4kyu/matrix-determinant.js) |
 
 ### 3 kyu
 

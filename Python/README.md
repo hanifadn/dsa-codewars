@@ -88,6 +88,7 @@ Below, sections are listed in **descending kyu order**: **8 kyu** first, **1 kyu
 | Exercise | File |
 |----------|------|
 | 4 By 4 Skyscrapers | [4-by-4-skyscrapers.py](4kyu/4-by-4-skyscrapers.py) |
+| Matrix Determinant | [matrix-determinant.py](4kyu/matrix-determinant.py) |
 
 ### 3 kyu
 

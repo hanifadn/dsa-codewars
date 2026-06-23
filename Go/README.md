@@ -65,6 +65,7 @@ Solutions use `package kata` where that matches Codewars. There is no `func main
 | Exercise | File |
 |----------|------|
 | 4 By 4 Skyscrapers | [4-by-4-skyscrapers.go](4kyu/4-by-4-skyscrapers.go) |
+| Matrix Determinant | [matrix-determinant.go](4kyu/matrix-determinant.go) |
 
 ## License
 

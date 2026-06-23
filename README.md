@@ -116,6 +116,7 @@ Below, each row lists every implementation in this repo. Language links use path
 | Exercise | File |
 |----------|------|
 | 4 By 4 Skyscrapers | [Go](Go/4kyu/4-by-4-skyscrapers.go) — [JavaScript](JavaScript/4kyu/4-by-4-skyscrapers.js) — [Python](Python/4kyu/4-by-4-skyscrapers.py) |
+| Matrix Determinant | [Go](Go/4kyu/matrix-determinant.go) — [JavaScript](JavaScript/4kyu/matrix-determinant.js) — [Python](Python/4kyu/matrix-determinant.py) |
 
 ### 3 kyu
 
