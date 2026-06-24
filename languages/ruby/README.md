@@ -16,6 +16,7 @@ Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [Conventions
 | Exercise | File |
 |----------|------|
 | Array plus array | [array-plus-array.rb](8kyu/array-plus-array.rb) |
+| Beginner - Lost Without a Map | [beginner-lost-without-a-map.rb](8kyu/beginner-lost-without-a-map.rb) |
 <!-- END GENERATED -->
 
 ## License
