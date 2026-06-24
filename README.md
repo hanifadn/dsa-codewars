@@ -27,10 +27,20 @@ A collection of my solutions to [Codewars](https://www.codewars.com/) challenges
 
 ```
 dsa-codewars/
+├── C/
+├── Cpp/
+├── CSharp/
+├── Dart/
 ├── Go/
 ├── Groovy/
+├── Java/
 ├── JavaScript/
+├── Lua/
 ├── Python/
+├── Ruby/
+├── Rust/
+├── Scala/
+├── TypeScript/
 └── README.md
 ```
 
@@ -43,19 +53,39 @@ Within each language directory, files live in subfolders that reflect difficulty
 
 ### Language documentation
 
+- [C](C/README.md)
+- [C++](Cpp/README.md)
+- [C#](CSharp/README.md)
+- [Dart](Dart/README.md)
 - [Go](Go/README.md)
 - [Groovy](Groovy/README.md)
+- [Java](Java/README.md)
 - [JavaScript](JavaScript/README.md)
+- [Lua](Lua/README.md)
 - [Python](Python/README.md)
+- [Ruby](Ruby/README.md)
+- [Rust](Rust/README.md)
+- [Scala](Scala/README.md)
+- [TypeScript](TypeScript/README.md)
 
 This repository does not include a shared test runner.
 
 **To run a solution on your machine:**
 
+- **C:** See [Running locally](C/README.md#running-locally) — add a temporary `main` to compile with `gcc`.
+- **C++:** See [Running locally](Cpp/README.md#running-locally) — add a temporary `main` to compile with `g++`.
+- **C#:** See [Running locally](CSharp/README.md#running-locally) — use `dotnet` or paste into Codewars.
+- **Dart:** `dart path/to/kata-file.dart` — see [Running locally](Dart/README.md#running-locally).
 - **Go:** See [Running locally](Go/README.md#running-locally) — snippets omit `func main`; use `go test`, a small `package main`, or import `kata` in a module.
 - **Groovy:** `groovy path/to/kata-file.groovy`, or `groovysh` / `groovy -e` — see [Running locally](Groovy/README.md#running-locally).
+- **Java:** See [Running locally](Java/README.md#running-locally) — compile with `javac`; snippets omit `main`.
 - **JavaScript:** `node path/to/kata-file.js` — see [Running locally](JavaScript/README.md#running-locally) (add `console.log(...)` when the file only defines functions).
+- **Lua:** `lua path/to/kata-file.lua` — see [Running locally](Lua/README.md#running-locally).
 - **Python:** `python3 path/to/kata-file.py`, or `python3 -i path/to/kata-file.py` — see [Running locally](Python/README.md#running-locally).
+- **Ruby:** `ruby path/to/kata-file.rb`, or `irb` with `load` — see [Running locally](Ruby/README.md#running-locally).
+- **Rust:** See [Running locally](Rust/README.md#running-locally) — use `rustc` or a scratch Cargo project.
+- **Scala:** `scala path/to/kata-file.scala` — see [Running locally](Scala/README.md#running-locally).
+- **TypeScript:** `npx tsx path/to/kata-file.ts`, or `tsc` + `node` — see [Running locally](TypeScript/README.md#running-locally).
 
 The canonical test suite for each exercise is on Codewars, via the link in that file’s header.
 
@@ -69,7 +99,7 @@ Below, each row lists every implementation in this repo. Language links use path
 
 | Exercise | File |
 |----------|------|
-| Array Plus Array | [JavaScript](JavaScript/8kyu/array-plus-array.js) — [Python](Python/8kyu/array-plus-array.py) |
+| Array Plus Array | [C](C/8kyu/array-plus-array.c) — [C++](Cpp/8kyu/array-plus-array.cpp) — [C#](CSharp/8kyu/array-plus-array.cs) — [Dart](Dart/8kyu/array-plus-array.dart) — [Java](Java/8kyu/Sum.java) — [JavaScript](JavaScript/8kyu/array-plus-array.js) — [Lua](Lua/8kyu/array-plus-array.lua) — [Python](Python/8kyu/array-plus-array.py) — [Ruby](Ruby/8kyu/array-plus-array.rb) — [Rust](Rust/8kyu/array-plus-array.rs) — [Scala](Scala/8kyu/array-plus-array.scala) — [TypeScript](TypeScript/8kyu/array-plus-array.ts) |
 | Beginner - Lost Without a Map | [Go](Go/8kyu/beginner-lost-without-a-map.go) — [JavaScript](JavaScript/8kyu/beginner-lost-without-a-map.js) — [Python](Python/8kyu/beginner-lost-without-a-map.py) |
 | Even or Odd | [Go](Go/8kyu/even-or-odd.go) — [Groovy](Groovy/8kyu/even-or-odd.groovy) — [JavaScript](JavaScript/8kyu/even-or-odd.js) — [Python](Python/8kyu/even-or-odd.py) |
 | Find Maximum and Minimum Values of a List | [JavaScript](JavaScript/8kyu/find-maximum-and-minimum-values-of-a-list.js) — [Python](Python/8kyu/find-maximum-and-minimum-values-of-a-list.py) |
