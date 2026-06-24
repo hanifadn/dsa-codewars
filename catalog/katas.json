@@ -1,0 +1,566 @@
+[
+  {
+    "slug": "array-plus-array",
+    "title": "Array plus array",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/5a2be17aee1aaefe2a000151",
+    "solutions": [
+      {
+        "language": "c",
+        "path": "languages/c/8kyu/array-plus-array.c"
+      },
+      {
+        "language": "csharp",
+        "path": "languages/csharp/8kyu/array-plus-array.cs"
+      },
+      {
+        "language": "cpp",
+        "path": "languages/cpp/8kyu/array-plus-array.cpp"
+      },
+      {
+        "language": "dart",
+        "path": "languages/dart/8kyu/array-plus-array.dart"
+      },
+      {
+        "language": "java",
+        "path": "languages/java/8kyu/array-plus-array.java"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/array-plus-array.js"
+      },
+      {
+        "language": "lua",
+        "path": "languages/lua/8kyu/array-plus-array.lua"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/array-plus-array.py"
+      },
+      {
+        "language": "ruby",
+        "path": "languages/ruby/8kyu/array-plus-array.rb"
+      },
+      {
+        "language": "rust",
+        "path": "languages/rust/8kyu/array-plus-array.rs"
+      },
+      {
+        "language": "scala",
+        "path": "languages/scala/8kyu/array-plus-array.scala"
+      },
+      {
+        "language": "typescript",
+        "path": "languages/typescript/8kyu/array-plus-array.ts"
+      }
+    ]
+  },
+  {
+    "slug": "beginner-lost-without-a-map",
+    "title": "Beginner - Lost Without a Map",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/57f781872e3d8ca2a000007e",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/8kyu/beginner-lost-without-a-map.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/beginner-lost-without-a-map.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/beginner-lost-without-a-map.py"
+      }
+    ]
+  },
+  {
+    "slug": "even-or-odd",
+    "title": "Even or Odd",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/53da3dbb4a5168369a0000fe",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/8kyu/even-or-odd.go"
+      },
+      {
+        "language": "groovy",
+        "path": "languages/groovy/8kyu/even-or-odd.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/even-or-odd.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/even-or-odd.py"
+      }
+    ]
+  },
+  {
+    "slug": "find-maximum-and-minimum-values-of-a-list",
+    "title": "Find Maximum and Minimum Values of a List",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/577a98a6ae28071780000989",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/find-maximum-and-minimum-values-of-a-list.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/find-maximum-and-minimum-values-of-a-list.py"
+      }
+    ]
+  },
+  {
+    "slug": "find-the-smallest-integer-in-the-array",
+    "title": "Find the smallest integer in the array",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/55a2d7ebe362935a210000b2",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/8kyu/find-the-smallest-integer-in-the-array.groovy"
+      }
+    ]
+  },
+  {
+    "slug": "grasshopper-debug",
+    "title": "Grasshopper - Debug",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/55cb854deb36f11f130000e1",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/8kyu/grasshopper-debug.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/grasshopper-debug.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/grasshopper-debug.py"
+      }
+    ]
+  },
+  {
+    "slug": "if-you-cant-sleep-just-count-sheep",
+    "title": "If you can't sleep, just count sheep!!",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/5b077ebdaf15be5c7f000077",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/8kyu/if-you-cant-sleep-just-count-sheep.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/if-you-cant-sleep-just-count-sheep.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/if-you-cant-sleep-just-count-sheep.py"
+      }
+    ]
+  },
+  {
+    "slug": "invert-values",
+    "title": "Invert values",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/8kyu/invert-values.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/invert-values.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/invert-values.py"
+      }
+    ]
+  },
+  {
+    "slug": "sum-arrays",
+    "title": "Sum Arrays",
+    "kyu": 8,
+    "link": "https://www.codewars.com/kata/53dc54212259ed3d4f00071c",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/8kyu/sum-arrays.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/8kyu/sum-arrays.py"
+      }
+    ]
+  },
+  {
+    "slug": "anagram-detection",
+    "title": "Anagram Detection",
+    "kyu": 7,
+    "link": "https://www.codewars.com/kata/529eef7a9194e0cbc1000255",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/7kyu/anagram-detection.groovy"
+      }
+    ]
+  },
+  {
+    "slug": "binary-addition",
+    "title": "Binary Addition",
+    "kyu": 7,
+    "link": "https://www.codewars.com/kata/551f37452ff852b7bd000139",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/7kyu/binary-addition.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/7kyu/binary-addition.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/7kyu/binary-addition.py"
+      }
+    ]
+  },
+  {
+    "slug": "get-the-middle-character",
+    "title": "Get the Middle Character",
+    "kyu": 7,
+    "link": "https://www.codewars.com/kata/56747fd5cb988479af000028",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/7kyu/get-the-middle-character.js"
+      }
+    ]
+  },
+  {
+    "slug": "youre-a-square",
+    "title": "You're a square!",
+    "kyu": 7,
+    "link": "https://www.codewars.com/kata/54c27a33fb7da0db0100040e",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/7kyu/youre-a-square.groovy"
+      }
+    ]
+  },
+  {
+    "slug": "array-diff",
+    "title": "Array.diff",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/523f5d21c841566fde000009",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/6kyu/array-diff.js"
+      }
+    ]
+  },
+  {
+    "slug": "break-camelcase",
+    "title": "Break CamelCase",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/5208f99aee097e6552000148",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/6kyu/break-camelcase.js"
+      }
+    ]
+  },
+  {
+    "slug": "convert-string-to-camelcase",
+    "title": "Convert string to camel case",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/517abf86da9663f1d2000003",
+    "solutions": [
+      {
+        "language": "python",
+        "path": "languages/python/6kyu/convert-string-to-camelcase.py"
+      }
+    ]
+  },
+  {
+    "slug": "counting-duplicates",
+    "title": "Counting Duplicates",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/6kyu/counting-duplicates.groovy"
+      }
+    ]
+  },
+  {
+    "slug": "create-phone-number",
+    "title": "Create Phone Number",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/525f50e3b73515a6db000b83",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/6kyu/create-phone-number.js"
+      }
+    ]
+  },
+  {
+    "slug": "duplicate-encoder",
+    "title": "Duplicate Encoder",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/54b42f9314d9229fd6000d9c",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/6kyu/duplicate-encoder.js"
+      }
+    ]
+  },
+  {
+    "slug": "tortoise-racing",
+    "title": "Tortoise racing",
+    "kyu": 6,
+    "link": "https://www.codewars.com/kata/55e2adece53b4cdcb900006c",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/6kyu/tortoise-racing.go"
+      },
+      {
+        "language": "groovy",
+        "path": "languages/groovy/6kyu/tortoise-racing.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/6kyu/tortoise-racing.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/6kyu/tortoise-racing.py"
+      }
+    ]
+  },
+  {
+    "slug": "calculating-with-functions",
+    "title": "Calculating with Functions",
+    "kyu": 5,
+    "link": "https://www.codewars.com/kata/5259121576d2994056000521",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/calculating-with-functions.js"
+      }
+    ]
+  },
+  {
+    "slug": "first-non-repeating-character",
+    "title": "First Non-Repeating Character",
+    "kyu": 5,
+    "link": "https://www.codewars.com/kata/52bc74d4ac05d0945d00054e",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/first-non-repeating-character.js"
+      }
+    ]
+  },
+  {
+    "slug": "moving-zeros-to-the-end",
+    "title": "Moving Zeros to the End",
+    "kyu": 5,
+    "link": "https://www.codewars.com/kata/52597aa56021e91c93000cb0",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/moving-zeros-to-the-end.js"
+      }
+    ]
+  },
+  {
+    "slug": "my-smallest-code-interpreter-aka-brainfk",
+    "title": "My Smallest Code Interpreter Aka Brainfk",
+    "kyu": 5,
+    "link": "",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/5kyu/my-smallest-code-interpreter-aka-brainfk.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/my-smallest-code-interpreter-aka-brainfk.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/5kyu/my-smallest-code-interpreter-aka-brainfk.py"
+      }
+    ]
+  },
+  {
+    "slug": "pete-the-baker",
+    "title": "Pete, the baker",
+    "kyu": 5,
+    "link": "https://www.codewars.com/kata/525c65e51bf619685c000059",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/5kyu/pete-the-baker.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/pete-the-baker.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/5kyu/pete-the-baker.py"
+      }
+    ]
+  },
+  {
+    "slug": "the-hashtag-generator",
+    "title": "The Hashtag Generator",
+    "kyu": 5,
+    "link": "https://www.codewars.com/kata/52449b062fb80683ec000024",
+    "solutions": [
+      {
+        "language": "groovy",
+        "path": "languages/groovy/5kyu/the-hashtag-generator.groovy"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/5kyu/the-hashtag-generator.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/5kyu/the-hashtag-generator.py"
+      }
+    ]
+  },
+  {
+    "slug": "4-by-4-skyscrapers",
+    "title": "4 By 4 Skyscrapers",
+    "kyu": 4,
+    "link": "https://www.codewars.com/kata/5671d975d81d6c1c87000022",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/4kyu/4-by-4-skyscrapers.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/4kyu/4-by-4-skyscrapers.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/4kyu/4-by-4-skyscrapers.py"
+      }
+    ]
+  },
+  {
+    "slug": "matrix-determinant",
+    "title": "Matrix Determinant",
+    "kyu": 4,
+    "link": "https://www.codewars.com/kata/52a382ee44408cea2500074c",
+    "solutions": [
+      {
+        "language": "go",
+        "path": "languages/go/4kyu/matrix-determinant.go"
+      },
+      {
+        "language": "javascript",
+        "path": "languages/javascript/4kyu/matrix-determinant.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/4kyu/matrix-determinant.py"
+      }
+    ]
+  },
+  {
+    "slug": "battleship-field-validator",
+    "title": "Battleship field validator",
+    "kyu": 3,
+    "link": "https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7",
+    "solutions": [
+      {
+        "language": "python",
+        "path": "languages/python/3kyu/battleship-field-validator.py"
+      }
+    ]
+  },
+  {
+    "slug": "the-builder-of-things",
+    "title": "The builder of things",
+    "kyu": 3,
+    "link": "https://www.codewars.com/kata/5571d9fc11526780a000011a",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/3kyu/the-builder-of-things.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/3kyu/the-builder-of-things.py"
+      }
+    ]
+  },
+  {
+    "slug": "the-millionth-fibonacci",
+    "title": "The Millionth Fibonacci",
+    "kyu": 3,
+    "link": "https://www.codewars.com/kata/53d40c1e2f13e331fc000c26",
+    "solutions": [
+      {
+        "language": "python",
+        "path": "languages/python/3kyu/the-millionth-fibonacci.py"
+      }
+    ]
+  },
+  {
+    "slug": "linear-equations-n-x-m-complete-solution-space-fraction-representation",
+    "title": "Linear equations N x M, complete solution space, fraction representation",
+    "kyu": 2,
+    "link": "https://www.codewars.com/kata/56464cf3f982b2e10d000015",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/2kyu/linear-equations-n-x-m-complete-solution-space-fraction-representation.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/2kyu/linear-equations-n-x-m-complete-solution-space-fraction-representation.py"
+      }
+    ]
+  },
+  {
+    "slug": "simple-interactive-nterpreter",
+    "title": "Simple Interactive Interpreter",
+    "kyu": 1,
+    "link": "https://www.codewars.com/kata/52ffcfa4aff455b3c2000750",
+    "solutions": [
+      {
+        "language": "javascript",
+        "path": "languages/javascript/1kyu/simple-interactive-nterpreter.js"
+      },
+      {
+        "language": "python",
+        "path": "languages/python/1kyu/simple-interactive-nterpreter.py"
+      }
+    ]
+  }
+]

@@ -54,6 +54,9 @@ out/
 *.swo
 *~
 
+# --- Local scratch ---
+.tmp-test/
+
 # --- Misc ---
 *.log
 .coverage
