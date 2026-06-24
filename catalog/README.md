@@ -3,8 +3,8 @@
 Browse every kata implemented in this repository, grouped by difficulty.
 
 - **Unique katas:** 33
-- **Total solutions:** 75
-- **Languages:** 14
+- **Total solutions:** 87
+- **Languages:** 16
 
 See [Conventions](../docs/CONVENTIONS.md) for how solutions are organized. Regenerate this file with `python3 scripts/generate-docs.py`.
 
@@ -14,7 +14,7 @@ See [Conventions](../docs/CONVENTIONS.md) for how solutions are organized. Regen
 | Exercise | Solutions |
 |----------|----------|
 | Array plus array | [C](../languages/c/8kyu/array-plus-array.c) — [C#](../languages/csharp/8kyu/array-plus-array.cs) — [C++](../languages/cpp/8kyu/array-plus-array.cpp) — [Dart](../languages/dart/8kyu/array-plus-array.dart) — [Java](../languages/java/8kyu/array-plus-array.java) — [JavaScript](../languages/javascript/8kyu/array-plus-array.js) — [Lua](../languages/lua/8kyu/array-plus-array.lua) — [Python](../languages/python/8kyu/array-plus-array.py) — [Ruby](../languages/ruby/8kyu/array-plus-array.rb) — [Rust](../languages/rust/8kyu/array-plus-array.rs) — [Scala](../languages/scala/8kyu/array-plus-array.scala) — [TypeScript](../languages/typescript/8kyu/array-plus-array.ts) |
-| Beginner - Lost Without a Map | [Go](../languages/go/8kyu/beginner-lost-without-a-map.go) — [JavaScript](../languages/javascript/8kyu/beginner-lost-without-a-map.js) — [Python](../languages/python/8kyu/beginner-lost-without-a-map.py) |
+| Beginner - Lost Without a Map | [C](../languages/c/8kyu/beginner-lost-without-a-map.c) — [C#](../languages/csharp/8kyu/beginner-lost-without-a-map.cs) — [C++](../languages/cpp/8kyu/beginner-lost-without-a-map.cpp) — [Dart](../languages/dart/8kyu/beginner-lost-without-a-map.dart) — [Go](../languages/go/8kyu/beginner-lost-without-a-map.go) — [Java](../languages/java/8kyu/beginner-lost-without-a-map.java) — [JavaScript](../languages/javascript/8kyu/beginner-lost-without-a-map.js) — [Kotlin](../languages/kotlin/8kyu/beginner-lost-without-a-map.kt) — [Lua](../languages/lua/8kyu/beginner-lost-without-a-map.lua) — [PHP](../languages/php/8kyu/beginner-lost-without-a-map.php) — [Python](../languages/python/8kyu/beginner-lost-without-a-map.py) — [Ruby](../languages/ruby/8kyu/beginner-lost-without-a-map.rb) — [Rust](../languages/rust/8kyu/beginner-lost-without-a-map.rs) — [Scala](../languages/scala/8kyu/beginner-lost-without-a-map.scala) — [TypeScript](../languages/typescript/8kyu/beginner-lost-without-a-map.ts) |
 | Even or Odd | [Go](../languages/go/8kyu/even-or-odd.go) — [Groovy](../languages/groovy/8kyu/even-or-odd.groovy) — [JavaScript](../languages/javascript/8kyu/even-or-odd.js) — [Python](../languages/python/8kyu/even-or-odd.py) |
 | Find Maximum and Minimum Values of a List | [JavaScript](../languages/javascript/8kyu/find-maximum-and-minimum-values-of-a-list.js) — [Python](../languages/python/8kyu/find-maximum-and-minimum-values-of-a-list.py) |
 | Find the smallest integer in the array | [Groovy](../languages/groovy/8kyu/find-the-smallest-integer-in-the-array.groovy) |

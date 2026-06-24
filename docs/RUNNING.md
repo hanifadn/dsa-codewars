@@ -82,6 +82,16 @@ node path/to/kata-file.js
 
 Add `console.log(...)` when the file only defines functions.
 
+## Kotlin
+
+- **Stack:** [Kotlin](https://kotlinlang.org/) **1.8** or newer on the JVM.
+- **Check:** `kotlinc -version`
+- Snippets define top-level functions only (no `main`). Add a temporary `main` or paste into Codewars.
+
+```bash
+kotlinc path/to/kata-file.kt -include-runtime -d kata.jar && java -jar kata.jar
+```
+
 ## Lua
 
 - **Stack:** [Lua](https://www.lua.org/) **5.3** or newer.
@@ -92,6 +102,15 @@ lua path/to/kata-file.lua
 ```
 
 Use `lua -i` for a REPL session with the file loaded.
+
+## PHP
+
+- **Stack:** [PHP](https://www.php.net/) **8.0** or newer.
+- **Check:** `php --version`
+
+```bash
+php path/to/kata-file.php
+```
 
 ## Python
 

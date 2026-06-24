@@ -62,16 +62,64 @@
     "link": "https://www.codewars.com/kata/57f781872e3d8ca2a000007e",
     "solutions": [
       {
+        "language": "c",
+        "path": "languages/c/8kyu/beginner-lost-without-a-map.c"
+      },
+      {
+        "language": "csharp",
+        "path": "languages/csharp/8kyu/beginner-lost-without-a-map.cs"
+      },
+      {
+        "language": "cpp",
+        "path": "languages/cpp/8kyu/beginner-lost-without-a-map.cpp"
+      },
+      {
+        "language": "dart",
+        "path": "languages/dart/8kyu/beginner-lost-without-a-map.dart"
+      },
+      {
         "language": "go",
         "path": "languages/go/8kyu/beginner-lost-without-a-map.go"
+      },
+      {
+        "language": "java",
+        "path": "languages/java/8kyu/beginner-lost-without-a-map.java"
       },
       {
         "language": "javascript",
         "path": "languages/javascript/8kyu/beginner-lost-without-a-map.js"
       },
       {
+        "language": "kotlin",
+        "path": "languages/kotlin/8kyu/beginner-lost-without-a-map.kt"
+      },
+      {
+        "language": "lua",
+        "path": "languages/lua/8kyu/beginner-lost-without-a-map.lua"
+      },
+      {
+        "language": "php",
+        "path": "languages/php/8kyu/beginner-lost-without-a-map.php"
+      },
+      {
         "language": "python",
         "path": "languages/python/8kyu/beginner-lost-without-a-map.py"
+      },
+      {
+        "language": "ruby",
+        "path": "languages/ruby/8kyu/beginner-lost-without-a-map.rb"
+      },
+      {
+        "language": "rust",
+        "path": "languages/rust/8kyu/beginner-lost-without-a-map.rs"
+      },
+      {
+        "language": "scala",
+        "path": "languages/scala/8kyu/beginner-lost-without-a-map.scala"
+      },
+      {
+        "language": "typescript",
+        "path": "languages/typescript/8kyu/beginner-lost-without-a-map.ts"
       }
     ]
   },
