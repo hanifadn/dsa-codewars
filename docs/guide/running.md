@@ -1,170 +1,153 @@
 # Running locally
 
-This repository does not include a shared test runner. The canonical test suite for each exercise is on Codewars, via the link in that file's header.
+No shared test runner — the canonical suite is on Codewars (link in each file header).
+
+[← Documentation](../README.md)
 
 <h2 id="c">C</h2>
 
-- **Stack:** [C](https://en.cppreference.com/w/c) with GCC or Clang (**C99** or newer).
-- **Check:** `gcc --version` or `clang --version`
-- Snippets define functions only (no `main`). Add a temporary `main` to compile locally, or paste into Codewars.
+Stack: GCC or Clang, **C99+** · `gcc --version`
+
+Snippets omit `main`. Add one locally or paste into Codewars.
 
 ```bash
-gcc -std=c99 -Wall path/to/kata-file.c -o kata && ./kata
+gcc -std=c99 -Wall path/to/kata.c -o kata && ./kata
 ```
 
 <h2 id="cpp">C++</h2>
 
-- **Stack:** [C++](https://isocpp.org/) with GCC or Clang (**C++11** or newer).
-- **Check:** `g++ --version` or `clang++ --version`
-- Add a temporary `main` to compile locally, or paste into Codewars.
+Stack: GCC or Clang, **C++11+** · `g++ --version`
 
 ```bash
-g++ -std=c++11 -Wall path/to/kata-file.cpp -o kata && ./kata
+g++ -std=c++11 -Wall path/to/kata.cpp -o kata && ./kata
 ```
 
 <h2 id="csharp">C#</h2>
 
-- **Stack:** [.NET SDK](https://dotnet.microsoft.com/) **6** or newer.
-- **Check:** `dotnet --version`
-- Wrap the snippet in a small console project or paste into Codewars.
+Stack: [.NET SDK](https://dotnet.microsoft.com/) **6+** · `dotnet --version`
 
 ```bash
-dotnet new console -o kata-run && cp path/to/kata-file.cs kata-run/Program.cs && dotnet run --project kata-run
+dotnet new console -o kata-run && cp path/to/kata.cs kata-run/Program.cs && dotnet run --project kata-run
 ```
 
-## Dart
+<h2 id="dart">Dart</h2>
 
-- **Stack:** [Dart SDK](https://dart.dev/) **2.19** or newer.
-- **Check:** `dart --version`
-- Add a temporary `main` if the file only defines functions.
+Stack: [Dart SDK](https://dart.dev/) **2.19+** · `dart --version`
 
 ```bash
-dart path/to/kata-file.dart
+dart path/to/kata.dart
 ```
 
-## Go
+<h2 id="go">Go</h2>
 
-- **Stack:** [Go](https://go.dev/) **1.18** or newer.
-- **Check:** `go version`
-- Solutions use `package kata` without `func main`. Use `go test`, a small `package main` wrapper, or paste into Codewars.
+Stack: [Go](https://go.dev/) **1.18+** · `go version`
 
-## Groovy
+Solutions use `package kata` without `main`. Use a wrapper, `go test`, or paste into Codewars.
 
-- **Stack:** [Apache Groovy](https://groovy-lang.org/) **2.5** or newer on the JVM.
-- **Check:** `groovy --version`
+<h2 id="groovy">Groovy</h2>
+
+Stack: [Groovy](https://groovy-lang.org/) **2.5+** on JVM · `groovy --version`
 
 ```bash
-groovy path/to/kata-file.groovy
+groovy path/to/kata.groovy
 ```
 
-Use `groovysh`, `groovy -e`, or paste into Codewars for snippets without a script entry point.
+<h2 id="java">Java</h2>
 
-## Java
+Stack: **Java 11+** · `javac -version`
 
-- **Stack:** [OpenJDK](https://openjdk.org/) or another Java SE distribution (**11** or newer).
-- **Check:** `java -version` and `javac -version`
-- Snippets use a Codewars skeleton class with static methods (no `main`). Add a temporary `main` or paste into Codewars.
+Replace `Sum` with the public class name in the file.
 
 ```bash
-javac path/to/kata-file.java && java -cp path/to Sum
+javac path/to/kata.java && java -cp path/to Sum
 ```
 
-Replace `Sum` with the public class name in that file.
+<h2 id="javascript">JavaScript</h2>
 
-## JavaScript
-
-- **Stack:** [Node.js](https://nodejs.org/) **18.x** or newer (LTS recommended).
-- **Check:** `node --version`
+Stack: [Node.js](https://nodejs.org/) **18+** · `node --version`
 
 ```bash
-node path/to/kata-file.js
+node path/to/kata.js
 ```
 
-Add `console.log(...)` when the file only defines functions.
+<h2 id="kotlin">Kotlin</h2>
 
-## Kotlin
-
-- **Stack:** [Kotlin](https://kotlinlang.org/) **1.8** or newer on the JVM.
-- **Check:** `kotlinc -version`
-- Snippets define top-level functions only (no `main`). Add a temporary `main` or paste into Codewars.
+Stack: **Kotlin 1.8+** on JVM · `kotlinc -version`
 
 ```bash
-kotlinc path/to/kata-file.kt -include-runtime -d kata.jar && java -jar kata.jar
+kotlinc path/to/kata.kt -include-runtime -d kata.jar && java -jar kata.jar
 ```
 
-## Lua
+<h2 id="lua">Lua</h2>
 
-- **Stack:** [Lua](https://www.lua.org/) **5.3** or newer.
-- **Check:** `lua -v`
+Stack: **Lua 5.3+** · `lua -v`
 
 ```bash
-lua path/to/kata-file.lua
+lua path/to/kata.lua
 ```
 
-Use `lua -i` for a REPL session with the file loaded.
+<h2 id="php">PHP</h2>
 
-## PHP
-
-- **Stack:** [PHP](https://www.php.net/) **8.0** or newer.
-- **Check:** `php --version`
+Stack: **PHP 8.0+** · `php --version`
 
 ```bash
-php path/to/kata-file.php
+php path/to/kata.php
 ```
 
-## Python
+<h2 id="python">Python</h2>
 
-- **Stack:** [Python](https://www.python.org/) **3.8** or newer.
-- **Check:** `python3 --version`
+Stack: **Python 3.8+** · `python3 --version`
 
 ```bash
-python3 path/to/kata-file.py
+python3 path/to/kata.py
 ```
 
-Use `python3 -i path/to/kata-file.py` when the file only defines functions.
+<h2 id="ruby">Ruby</h2>
 
-## Ruby
-
-- **Stack:** [Ruby](https://www.ruby-lang.org/) **2.7** or newer (**3.x** recommended).
-- **Check:** `ruby --version`
+Stack: **Ruby 2.7+** · `ruby --version`
 
 ```bash
-ruby path/to/kata-file.rb
+ruby path/to/kata.rb
 ```
 
-Use `irb` with `load "path/to/kata-file.rb"` for method-only files.
+<h2 id="rust">Rust</h2>
 
-## Rust
-
-- **Stack:** [Rust](https://www.rust-lang.org/) **1.70** or newer (edition **2021**).
-- **Check:** `rustc --version`
+Stack: **Rust 1.70+** (edition 2021) · `rustc --version`
 
 ```bash
-rustc path/to/kata-file.rs -o kata && ./kata
+rustc path/to/kata.rs -o kata && ./kata
 ```
 
-For larger exercises, use a temporary Cargo project.
+<h2 id="scala">Scala</h2>
 
-## Scala
-
-- **Stack:** [Scala](https://www.scala-lang.org/) **2.13** or newer on the JVM.
-- **Check:** `scala -version`
+Stack: **Scala 2.13+** on JVM · `scala -version`
 
 ```bash
-scala path/to/kata-file.scala
+scala path/to/kata.scala
 ```
 
-## TypeScript
+<h2 id="typescript">TypeScript</h2>
 
-- **Stack:** [TypeScript](https://www.typescriptlang.org/) **5.x** with [Node.js](https://nodejs.org/) **18.x** or newer.
-- **Check:** `tsc --version` and `node --version`
+Stack: **TypeScript 5.x** + Node **18+** · `npx tsx` or `tsc`
 
 ```bash
-npx tsx path/to/kata-file.ts
+npx tsx path/to/kata.ts
 ```
 
-Or compile first:
+<h2 id="shell">Shell</h2>
+
+Stack: Bash or POSIX shell · `bash --version`
+
+Input via `$1`, output via `echo`.
 
 ```bash
-tsc path/to/kata-file.ts && node path/to/kata-file.js
+bash path/to/kata.sh 4
+```
+
+<h2 id="sql">SQL</h2>
+
+Stack: SQLite (Codewars SQL katas) · `sqlite3 --version`
+
+```bash
+sqlite3 :memory: < path/to/kata.sql
 ```

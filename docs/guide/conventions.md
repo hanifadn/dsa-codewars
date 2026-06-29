@@ -1,61 +1,70 @@
 # Conventions
 
-This repository stores personal [Codewars](https://www.codewars.com/) solutions organized by language and difficulty.
+How this repository is organized and how to add solutions.
 
-## Repository layout
+[← Documentation](../README.md)
+
+## Architecture
 
 ```
 dsa-codewars/
-├── catalog/              # kata-centric index (generated)
-├── docs/                 # shared documentation
+├── docs/
+│   ├── guide/          # this file + running.md (hand-authored)
+│   ├── catalog/        # solution index (generated)
+│   └── logic/          # kata specs (hand-authored)
 ├── languages/
-│   ├── python/
-│   │   ├── README.md     # solution table (generated)
-│   │   └── 8kyu/
-│   │       └── kata-slug.py
-│   └── ...
+│   └── <lang>/<N>kyu/<slug>.<ext>
 └── scripts/
     └── generate-docs.py
 ```
 
-Within each language directory, solutions live in kyu subfolders (`8kyu/`, `7kyu/`, …, `1kyu/`). **A higher kyu number means an easier exercise; a lower kyu means a harder one.**
+| Layer | Maintained by | Purpose |
+|-------|---------------|---------|
+| `docs/logic/` | Problem solver | Pseudocode and behavioral contract per kata |
+| `languages/` | Coder | Implementations |
+| `docs/catalog/` | `generate-docs.py` | Index of what exists |
 
-## File naming
+Kyu folders run **8 → 1** (higher kyu = easier).
 
-- **One file per kata per language.**
-- The filename is the kata slug in kebab-case (for example `array-plus-array.py`).
-- The slug should match the Codewars kata URL when possible.
+## Solution files
 
-## File headers
+**One file per kata per language.** Filename = kata slug in kebab-case (`array-plus-array.py`).
 
-Every solution file starts with a short header containing:
+### Header (required)
 
 | Field | Example |
 |-------|---------|
 | Title | `Array plus array` |
 | Link | `https://www.codewars.com/kata/5a2be17aee1aaefe2a000151` |
 | Difficulty | `8 kyu` |
-| Description | Problem statement (optional `## Description` heading) |
+| Description | Optional problem statement |
 
-Use the comment style natural to the language (docstring, `//`, `/* */`, `#`, `--`, etc.).
+Use the comment style natural to the language.
 
-## Language-specific notes
+### Language notes
 
-- **Java / C#:** The public type name may follow the Codewars skeleton (for example class `Sum` in `array-plus-array.java`). The **filename** still uses the kata slug.
-- **Go:** Solutions use `package kata` without `func main`.
-- **Compiled languages (C, C++, Rust, Java):** Snippets omit an entry point; see [Running locally](RUNNING.md) to exercise them on your machine.
+| Language | Note |
+|----------|------|
+| Java / C# | Public type may follow Codewars skeleton; filename uses slug |
+| Go | `package kata`, no `main` |
+| Shell | Input via `$1`, output via stdout |
+| SQL | `SELECT` against Codewars SQLite schema |
+| C, C++, Rust, Java | No entry point in snippet — see [running.md](running.md) |
 
-## Adding a solution
+## Workflow
 
-1. Create `languages/<language>/<N>kyu/<slug>.<ext>`.
-2. Add the standard header (title, link, difficulty, description).
-3. Regenerate documentation:
+1. Write or verify logic spec at `docs/logic/<N>kyu/<slug>.md`.
+2. Add `languages/<language>/<N>kyu/<slug>.<ext>` with header.
+3. Run `python3 scripts/generate-docs.py`.
 
-```bash
-python3 scripts/generate-docs.py
-```
+## Generated artifacts
 
-## Documentation
+Do not hand-edit content between `<!-- BEGIN GENERATED -->` and `<!-- END GENERATED -->`.
 
-- Solution tables in `catalog/README.md` and each `languages/*/README.md` are **generated**. Edit the marker blocks only by running the script above.
-- Run instructions live in [RUNNING.md](RUNNING.md).
+| Path | Generator |
+|------|-----------|
+| `docs/catalog/README.md`, `katas.json` | `generate-docs.py` |
+| `docs/logic/README.md` | `generate-docs.py` |
+| `docs/README.md` | `generate-docs.py` |
+| `languages/*/README.md` | `generate-docs.py` |
+| Root `README.md` stats | `generate-docs.py` |
