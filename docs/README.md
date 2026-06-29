@@ -12,7 +12,7 @@ Three layers under `docs/`:
 
 | | |
 |---|---|
-| [Solution catalog](catalog/README.md) | 33 katas · 164 solutions · 18 languages |
+| [Solution catalog](catalog/README.md) | 33 katas · 87 solutions · 16 languages |
 | [Logic index](logic/README.md) | 33 behavioral contracts |
 | [Conventions](guide/conventions.md) | Layout, headers, workflow |
 | [Running locally](guide/running.md) | Per-language run commands |

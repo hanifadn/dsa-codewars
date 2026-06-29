@@ -2,13 +2,14 @@
 
 Personal [Codewars](https://www.codewars.com/) solutions in C.
 
-- **Run locally:** [docs/RUNNING.md#c](../../docs/RUNNING.md#c)
-- **Conventions:** [docs/CONVENTIONS.md](../../docs/CONVENTIONS.md)
-- **Browse by kata:** [catalog](../../catalog/README.md)
+- **Run locally:** [running.md#c](../../docs/guide/running.md#c)
+- **Conventions:** [conventions.md](../../docs/guide/conventions.md)
+- **Catalog:** [catalog](../../docs/catalog/README.md)
+- **Logic:** [logic](../../docs/logic/README.md)
 
 ## Solutions
 
-Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [Conventions](../../docs/CONVENTIONS.md) for layout details.
+Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [conventions](../../docs/guide/conventions.md) for layout details.
 
 <!-- BEGIN GENERATED -->
 ### 8 kyu
