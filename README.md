@@ -4,9 +4,10 @@ A collection of my solutions to [Codewars](https://www.codewars.com/) challenges
 
 ## Quick links
 
-- [Browse by kata](catalog/README.md)
-- [Conventions](docs/CONVENTIONS.md)
-- [Running locally](docs/RUNNING.md)
+- [Documentation](docs/README.md)
+- [Solution catalog](docs/catalog/README.md)
+- [Logic specs](docs/logic/README.md)
+- [Running locally](docs/guide/running.md)
 
 ## Stats
 
@@ -43,10 +44,13 @@ _Regenerate with `python3 scripts/generate-docs.py`._
 
 ```
 dsa-codewars/
-├── catalog/          # kata-centric index (generated)
-├── docs/             # conventions and run instructions
+├── docs/
+│   ├── guide/            # conventions + running (hand-authored)
+│   ├── catalog/          # solution index (generated)
+│   └── logic/            # kata specs + index
 ├── languages/
 │   ├── python/
+│   │   ├── README.md     # solution table (generated)
 │   │   └── 8kyu/
 │   └── ...
 └── scripts/

@@ -2,13 +2,14 @@
 
 Personal [Codewars](https://www.codewars.com/) solutions in Kotlin.
 
-- **Run locally:** [docs/RUNNING.md#kotlin](../../docs/RUNNING.md#kotlin)
-- **Conventions:** [docs/CONVENTIONS.md](../../docs/CONVENTIONS.md)
-- **Browse by kata:** [catalog](../../catalog/README.md)
+- **Run locally:** [running.md#kotlin](../../docs/guide/running.md#kotlin)
+- **Conventions:** [conventions.md](../../docs/guide/conventions.md)
+- **Catalog:** [catalog](../../docs/catalog/README.md)
+- **Logic:** [logic](../../docs/logic/README.md)
 
 ## Solutions
 
-Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [Conventions](../../docs/CONVENTIONS.md) for layout details.
+Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [conventions](../../docs/guide/conventions.md) for layout details.
 
 <!-- BEGIN GENERATED -->
 ### 8 kyu

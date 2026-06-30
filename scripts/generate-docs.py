@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Generate catalog and README tables from solution file headers."""
+"""Generate catalog, README tables, and logic-doc index from solution headers."""
 
 from __future__ import annotations
 
 import json
+import os
 import re
 from collections import defaultdict
 from dataclasses import dataclass
@@ -11,7 +12,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LANGUAGES_DIR = ROOT / "languages"
-CATALOG_DIR = ROOT / "catalog"
+DOCS_DIR = ROOT / "docs"
+GUIDE_DIR = DOCS_DIR / "guide"
+CATALOG_DIR = DOCS_DIR / "catalog"
+LOGIC_DOCS_DIR = DOCS_DIR / "logic"
 GENERATED_BEGIN = "<!-- BEGIN GENERATED -->"
 GENERATED_END = "<!-- END GENERATED -->"
 
@@ -31,6 +35,8 @@ LANGUAGE_META: dict[str, dict[str, str]] = {
     "ruby": {"display": "Ruby", "anchor": "ruby"},
     "rust": {"display": "Rust", "anchor": "rust"},
     "scala": {"display": "Scala", "anchor": "scala"},
+    "shell": {"display": "Shell", "anchor": "shell"},
+    "sql": {"display": "SQL", "anchor": "sql"},
     "typescript": {"display": "TypeScript", "anchor": "typescript"},
 }
 
@@ -50,6 +56,8 @@ SOLUTION_EXTENSIONS = {
     ".rb",
     ".rs",
     ".scala",
+    ".sh",
+    ".sql",
     ".ts",
 }
 
@@ -66,6 +74,14 @@ class Solution:
     @property
     def kyu_label(self) -> str:
         return f"{self.kyu} kyu"
+
+
+@dataclass
+class LogicDoc:
+    slug: str
+    title: str
+    kyu: int
+    rel_path: str
 
 
 def strip_comment_prefix(line: str) -> str:
@@ -138,6 +154,13 @@ def parse_kyu(folder_name: str) -> int:
     return int(match.group(1))
 
 
+def logic_doc_rel_path(slug: str, kyu: int) -> str | None:
+    path = LOGIC_DOCS_DIR / f"{kyu}kyu" / f"{slug}.md"
+    if not path.is_file():
+        return None
+    return path.relative_to(ROOT).as_posix()
+
+
 def discover_solutions() -> list[Solution]:
     solutions: list[Solution] = []
     for lang_dir in sorted(LANGUAGES_DIR.iterdir()):
@@ -166,6 +189,29 @@ def discover_solutions() -> list[Solution]:
     return solutions
 
 
+def discover_logic_docs() -> list[LogicDoc]:
+    docs: list[LogicDoc] = []
+    if not LOGIC_DOCS_DIR.is_dir():
+        return docs
+
+    for path in sorted(LOGIC_DOCS_DIR.rglob("*.md")):
+        if path.name == "README.md":
+            continue
+        kyu = parse_kyu(path.parent.name)
+        content = path.read_text(encoding="utf-8")
+        title_match = re.search(r"^# (.+)$", content, re.MULTILINE)
+        title = title_match.group(1).strip() if title_match else path.stem.replace("-", " ").title()
+        docs.append(
+            LogicDoc(
+                slug=path.stem,
+                title=title,
+                kyu=kyu,
+                rel_path=path.relative_to(LOGIC_DOCS_DIR).as_posix(),
+            )
+        )
+    return docs
+
+
 def kyu_sort_key(kyu: int) -> int:
     return -kyu
 
@@ -174,19 +220,32 @@ def language_sort_key(language: str) -> str:
     return LANGUAGE_META[language]["display"].lower()
 
 
-def format_language_links(solutions: list[Solution]) -> str:
+def rel_from(base_dir: Path, target: Path) -> str:
+    return os.path.relpath(target, base_dir).replace("\\", "/")
+
+
+def format_language_links(solutions: list[Solution], base_dir: Path) -> str:
     ordered = sorted(solutions, key=lambda s: language_sort_key(s.language))
     parts = []
     for sol in ordered:
         display = LANGUAGE_META[sol.language]["display"]
-        parts.append(f"[{display}](../{sol.rel_path})")
+        target = ROOT / sol.rel_path
+        parts.append(f"[{display}]({rel_from(base_dir, target)})")
     return " — ".join(parts)
+
+
+def format_logic_link(slug: str, kyu: int, base_dir: Path) -> str:
+    path = LOGIC_DOCS_DIR / f"{kyu}kyu" / f"{slug}.md"
+    if not path.is_file():
+        return "—"
+    return f"[logic]({rel_from(base_dir, path)})"
 
 
 def build_kyu_sections(
     grouped: dict[int, list[Solution]],
     *,
     by_language: str | None = None,
+    link_base_dir: Path | None = None,
 ) -> str:
     sections: list[str] = []
     for kyu in sorted(grouped.keys(), key=kyu_sort_key):
@@ -210,8 +269,14 @@ def build_kyu_sections(
             for slug in sorted(by_slug.keys(), key=lambda s: by_slug[s][0].title.lower()):
                 group = by_slug[slug]
                 title = group[0].title
-                rows.append(f"| {title} | {format_language_links(group)} |")
-            table = "| Exercise | Solutions |\n|----------|----------|\n" + "\n".join(rows)
+                base_dir = link_base_dir or CATALOG_DIR
+                logic = format_logic_link(slug, kyu, base_dir)
+                solutions_cell = format_language_links(group, base_dir)
+                rows.append(f"| {title} | {logic} | {solutions_cell} |")
+            table = (
+                "| Exercise | Logic | Solutions |\n"
+                "|----------|-------|----------|\n" + "\n".join(rows)
+            )
 
         sections.append(f"### {kyu} kyu\n\n{table}")
     return "\n\n".join(sections)
@@ -234,13 +299,14 @@ def render_language_readme(language: str, solutions: list[Solution]) -> str:
 
 Personal [Codewars](https://www.codewars.com/) solutions in {display}.
 
-- **Run locally:** [docs/RUNNING.md#{anchor}](../../docs/RUNNING.md#{anchor})
-- **Conventions:** [docs/CONVENTIONS.md](../../docs/CONVENTIONS.md)
-- **Browse by kata:** [catalog](../../catalog/README.md)
+- **Run locally:** [running.md#{anchor}](../../docs/guide/running.md#{anchor})
+- **Conventions:** [conventions.md](../../docs/guide/conventions.md)
+- **Catalog:** [catalog](../../docs/catalog/README.md)
+- **Logic:** [logic](../../docs/logic/README.md)
 
 ## Solutions
 
-Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [Conventions](../../docs/CONVENTIONS.md) for layout details.
+Kyu levels run from **8 kyu** (easiest) to **1 kyu** (hardest). See [conventions](../../docs/guide/conventions.md) for layout details.
 
 {GENERATED_BEGIN}
 {generated}
@@ -261,19 +327,93 @@ def render_catalog_readme(solutions: list[Solution]) -> str:
     unique_katas = len({(s.slug, s.kyu) for s in solutions})
     languages = len({s.language for s in solutions})
 
-    return f"""# Kata catalog
+    return f"""# Solution catalog
 
-Browse every kata implemented in this repository, grouped by difficulty.
+Every kata in this repository, grouped by difficulty. Each row links to the logic doc and all implemented solutions.
 
-- **Unique katas:** {unique_katas}
-- **Total solutions:** {len(solutions)}
-- **Languages:** {languages}
+| Katas | Solutions | Languages |
+|------:|----------:|----------:|
+| {unique_katas} | {len(solutions)} | {languages} |
 
-See [Conventions](../docs/CONVENTIONS.md) for how solutions are organized. Regenerate this file with `python3 scripts/generate-docs.py`.
+[Logic](../logic/README.md) · [Conventions](../guide/conventions.md) · [Docs](../README.md)
+
+_Regenerate with `python3 scripts/generate-docs.py`._
 
 {GENERATED_BEGIN}
 {generated}
 {GENERATED_END}
+"""
+
+
+def render_logic_docs_readme(logic_docs: list[LogicDoc]) -> str:
+    grouped: dict[int, list[LogicDoc]] = defaultdict(list)
+    for doc in logic_docs:
+        grouped[doc.kyu].append(doc)
+
+    sections: list[str] = []
+    for kyu in sorted(grouped.keys(), key=kyu_sort_key):
+        rows = []
+        for doc in sorted(grouped[kyu], key=lambda item: item.title.lower()):
+            rows.append(f"| {doc.title} | [{doc.slug}.md]({doc.rel_path}) |")
+        table = "| Kata | Logic |\n|------|-------|\n" + "\n".join(rows)
+        sections.append(f"## {kyu} kyu\n\n{table}")
+
+    generated = "\n\n".join(sections) if sections else "_No logic docs yet._"
+
+    return f"""# Logic
+
+Behavioral contracts and pseudocode — `docs/logic/<N>kyu/<slug>.md`.
+
+Content is hand-authored; only the index below is generated.
+
+[Catalog](../catalog/README.md) · [Conventions](../guide/conventions.md) · [Docs](../README.md)
+
+{GENERATED_BEGIN}
+{generated}
+{GENERATED_END}
+"""
+
+
+def render_docs_readme(solutions: list[Solution], logic_docs: list[LogicDoc]) -> str:
+    unique_katas = len({(s.slug, s.kyu) for s in solutions})
+    languages = len({s.language for s in solutions})
+
+    return f"""# Documentation
+
+Three layers under `docs/`:
+
+| Layer | Path | Role |
+|-------|------|------|
+| **Guide** | [guide/](guide/) | How to work with the repo (hand-authored) |
+| **Catalog** | [catalog/](catalog/) | Solution index from code (generated) |
+| **Logic** | [logic/](logic/) | Kata specs and pseudocode (hand-authored + generated index) |
+
+## Quick links
+
+| | |
+|---|---|
+| [Solution catalog](catalog/README.md) | {unique_katas} katas · {len(solutions)} solutions · {languages} languages |
+| [Logic index](logic/README.md) | {len(logic_docs)} behavioral contracts |
+| [Conventions](guide/conventions.md) | Layout, headers, workflow |
+| [Running locally](guide/running.md) | Per-language run commands |
+
+## Layout
+
+```
+docs/
+├── README.md           # this file
+├── guide/              # reference (hand-authored)
+│   ├── conventions.md
+│   └── running.md
+├── catalog/            # generated — solution index + katas.json
+│   ├── README.md
+│   └── katas.json
+└── logic/              # kata specs (hand-authored) + generated index
+    ├── README.md
+    └── <N>kyu/<slug>.md
+```
+
+Regenerate catalog and indexes: `python3 scripts/generate-docs.py`
 """
 
 
@@ -285,6 +425,8 @@ def render_root_readme(solutions: list[Solution]) -> str:
     for language in languages:
         display = LANGUAGE_META[language]["display"]
         count = sum(1 for s in solutions if s.language == language)
+        if count == 0:
+            continue
         lang_rows.append(
             f"| {display} | {count} | [languages/{language}](languages/{language}/README.md) |"
         )
@@ -292,7 +434,7 @@ def render_root_readme(solutions: list[Solution]) -> str:
     stats_block = (
         f"- **Unique katas:** {unique_katas}\n"
         f"- **Total solutions:** {len(solutions)}\n"
-        f"- **Languages:** {len(languages)}"
+        f"- **Languages:** {len({s.language for s in solutions})}"
     )
 
     return f"""# Codewars Challenges
@@ -301,9 +443,10 @@ A collection of my solutions to [Codewars](https://www.codewars.com/) challenges
 
 ## Quick links
 
-- [Browse by kata](catalog/README.md)
-- [Conventions](docs/CONVENTIONS.md)
-- [Running locally](docs/RUNNING.md)
+- [Documentation](docs/README.md)
+- [Solution catalog](docs/catalog/README.md)
+- [Logic specs](docs/logic/README.md)
+- [Running locally](docs/guide/running.md)
 
 ## Stats
 
@@ -323,10 +466,13 @@ _Regenerate with `python3 scripts/generate-docs.py`._
 
 ```
 dsa-codewars/
-├── catalog/          # kata-centric index (generated)
-├── docs/             # conventions and run instructions
+├── docs/
+│   ├── guide/            # conventions + running (hand-authored)
+│   ├── catalog/          # solution index (generated)
+│   └── logic/            # kata specs + index
 ├── languages/
 │   ├── python/
+│   │   ├── README.md     # solution table (generated)
 │   │   └── 8kyu/
 │   └── ...
 └── scripts/
@@ -348,11 +494,13 @@ def write_catalog_json(solutions: list[Solution]) -> None:
     for sol in solutions:
         key = f"{sol.kyu}:{sol.slug}"
         if key not in by_kata:
+            logic_doc = logic_doc_rel_path(sol.slug, sol.kyu)
             by_kata[key] = {
                 "slug": sol.slug,
                 "title": sol.title,
                 "kyu": sol.kyu,
                 "link": sol.link,
+                "logic_doc": logic_doc,
                 "solutions": [],
             }
         by_kata[key]["solutions"].append(
@@ -380,12 +528,22 @@ def main() -> None:
     if not solutions:
         raise SystemExit("No solutions found under languages/")
 
-    CATALOG_DIR.mkdir(exist_ok=True)
+    logic_docs = discover_logic_docs()
+
+    CATALOG_DIR.mkdir(parents=True, exist_ok=True)
     (CATALOG_DIR / "README.md").write_text(
         render_catalog_readme(solutions), encoding="utf-8"
     )
     write_catalog_json(solutions)
+    (DOCS_DIR / "README.md").write_text(
+        render_docs_readme(solutions, logic_docs), encoding="utf-8"
+    )
     (ROOT / "README.md").write_text(render_root_readme(solutions), encoding="utf-8")
+
+    LOGIC_DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    (LOGIC_DOCS_DIR / "README.md").write_text(
+        render_logic_docs_readme(logic_docs), encoding="utf-8"
+    )
 
     for language in sorted(LANGUAGE_META.keys(), key=language_sort_key):
         lang_dir = LANGUAGES_DIR / language
@@ -395,7 +553,11 @@ def main() -> None:
             render_language_readme(language, solutions), encoding="utf-8"
         )
 
-    print(f"Generated docs for {len(solutions)} solutions across {len(LANGUAGE_META)} languages.")
+    active_languages = len({s.language for s in solutions})
+    print(
+        f"Generated docs for {len(solutions)} solutions across {active_languages} languages "
+        f"and {len(logic_docs)} logic docs."
+    )
 
 
 if __name__ == "__main__":
